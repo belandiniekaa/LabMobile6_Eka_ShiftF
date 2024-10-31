@@ -1,0 +1,123 @@
+// Palet Warna
+$primary-color: #ff6f81; // Warna utama
+$secondary-color: #ff3b5b; // Warna sekunder
+$background-color: #ffebee; // Warna latar belakang keseluruhan pink yang lebih terang
+$background-card-color: #ffffff; // Warna latar belakang kartu tetap putih
+$text-color: #333; // Warna teks utama
+$light-text-color: #555; // Warna teks sekunder
+$shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); // Efek bayangan
+
+body, ion-content {
+  font-family: 'Poppins', sans-serif; // Menggunakan font Poppins
+  margin: 0;
+  padding: 0;
+  background: $background-color !important; // Warna latar belakang keseluruhan pink
+}
+
+.dashboard-content {
+  padding: 16px;
+  color: $text-color; // Warna teks
+}
+
+// Bagian Profil
+.profile-section {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8); // Warna latar belakang semi transparan untuk profil
+  padding: 16px;
+  border-radius: 15px;
+  box-shadow: $shadow;
+  margin-bottom: 20px;
+
+  .profile-summary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+
+    .profile-avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 2px solid $secondary-color;
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .profile-info {
+      h2 {
+        font-size: 22px;
+        color: $secondary-color; // Warna judul profil
+        margin: 0;
+      }
+
+      p {
+        margin: 4px 0;
+        color: $text-color;
+        font-size: 14px;
+      }
+
+      span {
+        font-size: 12px;
+        color: $light-text-color;
+      }
+    }
+
+    .edit-button {
+      margin-left: auto;
+      --background: $secondary-color; // Warna tombol edit
+      color: #ffffff;
+      font-size: 14px;
+      --border-radius: 8px;
+    }
+  }
+}
+
+// Konten Utama
+.main-content {
+  text-align: center;
+
+  .welcome-text {
+    font-size: 28px;
+    color: $secondary-color; // Warna teks selamat datang
+    font-weight: 700;
+    margin: 12px 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .intro-text {
+    font-size: 16px;
+    color: $light-text-color; // Warna teks intro
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+
+  .feature-card {
+    background: $background-card-color; // Warna latar belakang kartu fitur
+    border-radius: 15px;
+    padding: 16px;
+    box-shadow: $shadow;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    .feature-icon {
+      font-size: 24px;
+      color: $primary-color; // Warna ikon fitur
+    }
+
+    h4 {
+      font-size: 18px;
+      color: $text-color; // Warna judul fitur
+      margin: 0;
+    }
+
+    p {
+      font-size: 14px;
+      color: $light-text-color; // Warna deskripsi fitur
+      margin: 0;
+    }
+  }
+}

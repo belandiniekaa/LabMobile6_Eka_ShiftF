@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="dashboard-content">
+  <div class="profile-section">
+    <!-- Profile Summary -->
+    <div class="profile-summary">
+      <ion-avatar class="profile-avatar">
+        <img src="assets/ebel.jpg" alt="Profile Picture" />
+      </ion-avatar>
+      <div class="profile-info">
+        <h2>Eka Belandini</h2>
+        <p>NIM: H1D022002</p>
+        <span>Mahasiswi Informatika</span>
+      </div>
+      <ion-button fill="solid" color="secondary" size="small" class="edit-button">Edit Profil</ion-button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1 class="welcome-text">Selamat Datang, Eka!</h1>
+    <p class="intro-text">Aplikasi ini siap membantu Anda meningkatkan produktivitas dan meraih target harian. Selamat mencoba!</p>
+    
+    <ion-card class="feature-card">
+      <ion-icon name="checkmark-circle-outline" class="feature-icon"></ion-icon>
+      <h4>Target Produktivitas</h4>
+      <p>Lacak progres tugas harian Anda dengan mudah.</p>
+    </ion-card>
+    
+    <ion-card class="feature-card">
+      <ion-icon name="calendar-outline" class="feature-icon"></ion-icon>
+      <h4>Jadwal Harian</h4>
+      <p>Atur jadwal dengan fitur kalender yang intuitif.</p>
+    </ion-card>
+  </div>
+</ion-content>
